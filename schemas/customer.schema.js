@@ -20,7 +20,6 @@ const createCustomerSchema=Joi.object({
     email: email.required(),
     password: password.required()
   }),
-  userId: userId.required()
 });
 
 const updateCustomerSchema=Joi.object({name,lastName,phone,userId});
