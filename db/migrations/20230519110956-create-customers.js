@@ -2,6 +2,7 @@
 
 const { CUSTOMER_TABLE } = require('../models/customer.model')
 const { USER_TABLE } = require('../models/user.model')
+const { DataTypes, Sequelize } = require('sequelize')
 
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
@@ -30,7 +31,7 @@ module.exports = {
         allowNull: false,
         type: DataTypes.DATE,
         field:'created_at',
-        defaultValue:Sequelize.NOW,
+        defaultValue: Sequelize.NOW,
       },
       userId:{
         field: 'user_id',
